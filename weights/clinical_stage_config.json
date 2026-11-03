@@ -1,0 +1,202 @@
+{
+  "male": {
+    "stage_group_weights": {
+      "1": {
+        "DIP": 0.0945,
+        "PIP": 0.1919,
+        "MCP": 0.1893,
+        "Thumb": 0.1044,
+        "Carpal": 0.3551,
+        "Wrist": 0.0648
+      },
+      "2": {
+        "DIP": 0.2405,
+        "PIP": 0.1156,
+        "MCP": 0.404,
+        "Thumb": 0.0,
+        "Carpal": 0.0914,
+        "Wrist": 0.1485
+      },
+      "3": {
+        "DIP": 0.2804,
+        "PIP": 0.2077,
+        "MCP": 0.261,
+        "Thumb": 0.049,
+        "Carpal": 0.0812,
+        "Wrist": 0.1207
+      },
+      "4": {
+        "DIP": 0.3775,
+        "PIP": 0.2777,
+        "MCP": 0.0899,
+        "Thumb": 0.1627,
+        "Carpal": 0.0,
+        "Wrist": 0.0921
+      },
+      "5": {
+        "DIP": 0.0,
+        "PIP": 0.2604,
+        "MCP": 0.4322,
+        "Thumb": 0.1785,
+        "Carpal": 0.0,
+        "Wrist": 0.129
+      }
+    },
+    "alpha_clinical": {
+      "1": 0.85,
+      "2": 0.85,
+      "3": 0.85,
+      "4": 0.5453,
+      "5": 0.85
+    },
+    "morph_cols": [
+      "n_carpal",
+      "carpal_occupancy",
+      "mean_rw",
+      "mean_f_dip",
+      "mean_f_pip",
+      "mean_f_mcp",
+      "sesamoid_score",
+      "sesamoid_present",
+      "wrist_sobel",
+      "wrist_fusion"
+    ],
+    "oof_benchmark": {
+      "old_static_rf_mae": 7.26,
+      "new_clinical_stage_mae": 6.82,
+      "improvement_months": 0.44,
+      "stage_breakdown": {
+        "1": {
+          "count": 27,
+          "old_rf_mae": 10.0,
+          "new_clinical_mae": 5.8,
+          "improvement": 4.21
+        },
+        "2": {
+          "count": 264,
+          "old_rf_mae": 8.69,
+          "new_clinical_mae": 8.43,
+          "improvement": 0.26
+        },
+        "3": {
+          "count": 415,
+          "old_rf_mae": 7.21,
+          "new_clinical_mae": 6.95,
+          "improvement": 0.25
+        },
+        "4": {
+          "count": 226,
+          "old_rf_mae": 4.93,
+          "new_clinical_mae": 4.66,
+          "improvement": 0.27
+        },
+        "5": {
+          "count": 68,
+          "old_rf_mae": 8.66,
+          "new_clinical_mae": 7.27,
+          "improvement": 1.39
+        }
+      }
+    }
+  },
+  "female": {
+    "stage_group_weights": {
+      "1": {
+        "DIP": 0.5242,
+        "PIP": 0.0,
+        "MCP": 0.4221,
+        "Thumb": 0.0,
+        "Carpal": 0.0537,
+        "Wrist": 0.0
+      },
+      "2": {
+        "DIP": 0.2668,
+        "PIP": 0.0435,
+        "MCP": 0.3471,
+        "Thumb": 0.0491,
+        "Carpal": 0.1506,
+        "Wrist": 0.1428
+      },
+      "3": {
+        "DIP": 0.2904,
+        "PIP": 0.1928,
+        "MCP": 0.3121,
+        "Thumb": 0.0542,
+        "Carpal": 0.0418,
+        "Wrist": 0.1088
+      },
+      "4": {
+        "DIP": 0.4015,
+        "PIP": 0.2777,
+        "MCP": 0.1451,
+        "Thumb": 0.0,
+        "Carpal": 0.0,
+        "Wrist": 0.1757
+      },
+      "5": {
+        "DIP": 0.0,
+        "PIP": 0.6107,
+        "MCP": 0.1336,
+        "Thumb": 0.0,
+        "Carpal": 0.0251,
+        "Wrist": 0.2305
+      }
+    },
+    "alpha_clinical": {
+      "1": 0.85,
+      "2": 0.85,
+      "3": 0.85,
+      "4": 0.3383,
+      "5": 0.649
+    },
+    "morph_cols": [
+      "n_carpal",
+      "carpal_occupancy",
+      "mean_rw",
+      "mean_f_dip",
+      "mean_f_pip",
+      "mean_f_mcp",
+      "sesamoid_score",
+      "sesamoid_present",
+      "wrist_sobel",
+      "wrist_fusion"
+    ],
+    "oof_benchmark": {
+      "old_static_rf_mae": 7.7,
+      "new_clinical_stage_mae": 7.12,
+      "improvement_months": 0.59,
+      "stage_breakdown": {
+        "1": {
+          "count": 17,
+          "old_rf_mae": 7.64,
+          "new_clinical_mae": 3.13,
+          "improvement": 4.51
+        },
+        "2": {
+          "count": 344,
+          "old_rf_mae": 7.58,
+          "new_clinical_mae": 7.24,
+          "improvement": 0.34
+        },
+        "3": {
+          "count": 390,
+          "old_rf_mae": 8.18,
+          "new_clinical_mae": 7.64,
+          "improvement": 0.54
+        },
+        "4": {
+          "count": 182,
+          "old_rf_mae": 6.61,
+          "new_clinical_mae": 5.63,
+          "improvement": 0.98
+        },
+        "5": {
+          "count": 67,
+          "old_rf_mae": 8.57,
+          "new_clinical_mae": 8.51,
+          "improvement": 0.05
+        }
+      }
+    }
+  }
+}
